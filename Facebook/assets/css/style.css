@@ -68,12 +68,12 @@ header p{
 }
 .pass input {
     border: 1px solid #c4c4c4;
-    width: 400px;
+    width: 410px;
     height: 40px;
     font-size: 15px;
     padding-left: 10px;
     border-radius: 5px;
-    margin: 1px 0;
+    margin: 5px 0;
 }
 .bd{
     display: flex;
@@ -184,5 +184,74 @@ footer{
     text-decoration: none;
 }
     
+
+@media only screen and (max-width: 500px) {
+  
+    form{
+        width: 70%;
+    }
+    form .name{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+    form .name input{
+        width: 90%;
+    }
+    form .pass{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+    form .pass input{
+        width: 90%;
+    }
+    form .about{
+        display: block;
+        flex-direction: column;
+        width: 90%;
+    }
+    form .about .bd select{
+        width: 120%;
+    }
+    form .about .bd .day{
+        padding-left: 10%;
+    }
+    form .about .bd .year{
+        padding-left: 6%;
+    }
+    form .about input{
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    form .about .bd{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    form .about .bd select{
+        padding: 0;
+        width: 100%;
+    }
+    form .about .bd .day{
+        padding: 0;
+    }
+    form .about .bd .year{
+        padding: 0;
+    }
+
+    .gender{
+        text-align: center;
+        width: 100%;
+    }
+    .gender-item{
+        width: 0;
+        width: 100%;
+    }
+  }
     
     
